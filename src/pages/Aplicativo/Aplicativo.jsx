@@ -26,7 +26,7 @@ function Aplicativo() {
   }
 
   function openPlaystore() {
-    window.open("https://www.youtube.com/", "_blank");
+    window.open("https://play.google.com/store/", "_blank");
   }
 
   return (
