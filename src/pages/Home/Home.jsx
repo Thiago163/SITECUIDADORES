@@ -49,6 +49,10 @@ function Home() {
           <img src={imgHome} alt="imagem de cuidadores" />
         </div>
 
+
+        <div className="titleGeneral">
+          <h1>Quem Somos?</h1>
+        </div>
         <div className="rectangles">
           <div className="rectangle1">
             <div className="imgrectangle">
@@ -70,6 +74,10 @@ function Home() {
             </div>
             <p>Conte com nossa plataforma para encontrar a babá ideal para sua família, com toda a praticidade e segurança que você merece!</p>
           </div>
+        </div>
+
+        <div className="titleGeneral">
+          <h1>Explorem nosso APP</h1>
         </div>
         <div className="containerAPP">
         <button onClick={aplicativo} className="appButton">Aplicativo</button>

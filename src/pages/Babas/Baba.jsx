@@ -16,7 +16,13 @@ function Jobs() {
       })
       .catch((error) => {
         console.log(error);
-        alert("Erro ao buscar vagas");
+        const errorDiv = document.createElement("div");
+        errorDiv.classList.add("alert");
+        errorDiv.textContent = "Erro ao buscar babás⚠️";
+        document.body.appendChild(errorDiv);
+        setTimeout(() => {
+          document.body.removeChild(errorDiv);
+        }, 4000);
       });
   }, []);
 
