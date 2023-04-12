@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.14547f3c.css",
+    "main.js": "/static/js/main.312204bf.js",
+    "static/js/787.8172441d.chunk.js": "/static/js/787.8172441d.chunk.js",
+    "static/media/babas.jpg": "/static/media/babas.bffcec764684c215a758.jpg",
+    "static/media/play-store.jpg": "/static/media/play-store.330fe85c8a098de5752e.jpg",
+    "static/media/mae.jpg": "/static/media/mae.ed3b62b1b2ac320a39bd.jpg",
+    "static/media/pai.jpeg": "/static/media/pai.739810ca7db027f53590.jpeg",
+    "static/media/cuidadores.png": "/static/media/cuidadores.21f6dd6b0bf58e59ddca.png",
+    "static/media/tias.jpg": "/static/media/tias.721639d65c6b2c7d5fa5.jpg",
+    "static/media/cuidadoresLogo.png": "/static/media/cuidadoresLogo.c9f6ba4a25b14becd521.png",
+    "static/media/avos.jpg": "/static/media/avos.90d18634275bda6615d6.jpg",
+    "static/media/brinquedo.jpg": "/static/media/brinquedo.9831fb3b4b038097a35c.jpg",
+    "static/media/bebe.jpg": "/static/media/bebe.6b89766f179f71808b0f.jpg",
+    "static/media/tcc.png": "/static/media/tcc.5eebb90eb754fcd1aa27.png",
+    "index.html": "/index.html",
+    "main.14547f3c.css.map": "/static/css/main.14547f3c.css.map",
+    "main.312204bf.js.map": "/static/js/main.312204bf.js.map",
+    "787.8172441d.chunk.js.map": "/static/js/787.8172441d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14547f3c.css",
+    "static/js/main.312204bf.js"
+  ]
+}

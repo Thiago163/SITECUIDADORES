@@ -89,6 +89,12 @@ section#home {
   height: 30vw;
 }
 
+.containerAPP{
+  margin-left: 13vw;
+  justify-content: center;
+  align-items: center;
+}
+
 /* estilos padrão para a classe appButton */
 .appButton {
   margin-top: 2.5vw;
