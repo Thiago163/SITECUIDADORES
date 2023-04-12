@@ -296,7 +296,7 @@ section#home {
 }
 
 /* estilos para telas menores que 400px de largura */
-@media (max-width: 400px) {
+@media (max-width: 280px) {
   .rectangle1,
   .rectangle2,
   .rectangle3 {
