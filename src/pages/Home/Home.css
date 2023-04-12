@@ -1,0 +1,302 @@
+/* Estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #add8e6;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilos do header */
+header {
+position: fixed;
+top: 0;
+left: 0;
+background-color: #ff49a4;
+width: 13.65%; /* igual ao tamanho do section#home */
+height: 100%;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+overflow-x: hidden; /* adicionado */
+}
+
+nav ul {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  max-width: 13.65%; /* adicionado */
+}
+
+nav li {
+  flex-direction: column;
+  margin-left: 0vw;
+  margin-top: 0.5vw;
+  color: rgb(255, 255, 255);
+  font-size: 2vw;
+  text-align: center;
+  padding: 10px 2.65vw;
+  background-color: #ff49a4;
+  border-radius: 0px;
+  transition: 0.2;
+  cursor: pointer;
+}
+
+nav li:hover {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: 0.2;
+  background-color: #add8e6;
+  color: rgb(0, 0, 0);
+}
+
+/* Estilos do conteúdo */
+section#home {
+  align-items: center;
+  justify-content: flex-end; /* fixa o componente à direita */
+  margin-top: 0;
+  margin-left: 13.65%; /* igual ao tamanho do header */
+  height: 100%; /* ajuste da altura */
+  width: 86.35%; /* ajuste da altura */
+  padding: 50px;
+}
+
+.titleBox h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #ff49a4;
+  font-size: 6vw;
+  text-align: center;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.19);
+  max-width: 80vw;
+  margin-top: -3%;
+}
+
+/* estilos padrão para a classe imgBox */
+.imgBox {
+  flex-direction: row;
+  margin-left: 5%;
+  margin-top: 4vw;
+  max-width: 250vw;
+}
+
+/* estilos padrão para as imagens dentro de imgBox */
+.imgBox img {
+  height: 30vw;
+}
+
+/* estilos padrão para a classe appButton */
+.appButton {
+  margin-top: 2.5vw;
+  margin-left: 26.6%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  padding: 0.1vw 9vw;
+  background-color: #ff49a4;
+  border: 2.5px solid black;
+  border-radius: 4vw;
+  box-shadow: 0.3vw 0.6vw 0.6vw -0.2vw rgba(0,0,0,0.10);
+  transition: 0.2s;
+  cursor: pointer;
+  font-size: 2vw;
+}
+
+/* estilos para quando o cursor do mouse estiver sobre o botão */
+.appButton:hover {
+  background-color: #add8e6;
+  color: rgb(0, 0, 0);
+  /* estilos adicionados */
+  transition-duration: 0.3s;
+  transform: scale(1.05);
+  box-shadow: 0.5vw 1vw 1vw -0.3vw rgba(0,0,0,0.20);
+}
+
+/* estilos para telas menores que 600px de largura */
+@media (max-width: 600px) {
+  .imgBox {
+    flex-direction: row;
+    margin-left: 16.5%;
+  }
+  .imgBox img {
+    height: 20vw;
+  }
+  .appButton {
+    margin-left: 10%;
+    padding: 1vw 6vw;
+    font-size: 4vw;
+    border-radius: 6vw;
+  }
+}
+
+/* estilos para telas menores que 280px de largura */
+@media (max-width: 280px) {
+  .imgBox {
+    flex-direction: row;
+    margin-left: 0;
+  }
+  .imgBox img {
+    height: 23vw;
+  }
+  .appButton {
+    margin-left: 18%;
+    padding: 1vw 6vw;
+    font-size: 4vw;
+    border-radius: 6vw;
+  }
+}
+
+/* estilos para telas maiores que 1200px de largura */
+@media (min-width: 1200px) {
+  .imgBox {
+    margin-left: 15%;
+  }
+  .imgBox img {
+    height: 27vw;
+  }
+  .appButton {
+    margin-left: 25%;
+    padding: 0.5vw 6vw;
+    font-size: 1.5vw;
+    border-radius: 2vw;
+  }
+}
+
+/* Estilos dos retângulos */
+.rectangles {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 0%;
+}
+
+.rectangle1,
+.rectangle2,
+.rectangle3 {
+  margin-top: 13%;
+  width: 27%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  overflow: visible; /* alterado para permitir que a imagem ultrapasse a borda */
+}
+
+.imgrectangle img {
+  margin-top: -60px;
+  border-radius: 5% 5% 40% 40%;
+  border: 2px solid black;
+  height: 150px; /* alterado para preencher todo o espaço disponível */
+  width: 250px;
+  object-fit: cover; /* alterado para preencher todo o espaço disponível */
+}
+
+@media only screen and (max-width: 600px) {
+  .imgrectangle img {
+  /* estilos para telas menores que 600px */
+  margin-top: -45px;
+  border-radius: 5% 5% 40% 40%;
+  border: 2px solid black;
+  height: 100px;
+  width: 150px;
+  }
+  }
+
+.rectangle1 {
+  width: 400px;
+  height: 440px;
+  background-color: #ff49a4;
+  border-radius: 20px;
+  box-shadow: 3px 6px 6px -2px rgba(0, 0, 0, 0.1);
+  margin-right: 1vw;
+}
+
+.rectangle2 {
+  width: 400px;
+  height: 440px;
+  background-color: #46d1ff;
+  border-radius: 20px;
+  box-shadow: 3px 6px 6px -2px rgba(0, 0, 0, 0.1);
+  margin-right: 1vw;
+  margin-bottom: 30px;
+}
+
+.rectangle3 {
+  width: 400px;
+  height: 440px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 3px 6px 6px -2px rgba(0, 0, 0, 0.1);
+  margin-right: 1vw;
+  margin-bottom: 30px;
+}
+
+/* estilos padrão para as classes rectangle1, rectangle2 e rectangle3 */
+.rectangle1,
+.rectangle2,
+.rectangle3 {
+  color: #000000;
+  line-height: 1.25;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font-size: 130%;
+  font-weight: bold;
+  flex-direction: column;
+}
+
+/* estilos para telas menores que 600px de largura */
+@media (max-width: 600px) {
+  .rectangle1,
+  .rectangle2,
+  .rectangle3 {
+    font-size: 63%;
+  }
+}
+
+
+/* estilos para telas maiores que 1200px de largura */
+@media (min-width: 1200px) {
+  .rectangle1,
+  .rectangle2,
+  .rectangle3 {
+    font-size: 145%;
+  }
+}
+  
+  @media only screen and (max-width: 767px) {
+  .rectangles {
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .rectangle1,
+  .rectangle2,
+  .rectangle3 {
+  width: 90%;
+  margin-bottom: 30px;
+  margin-right: 0;
+  }
+  
+  .rectangle1 {
+  height: 335px;
+  border-radius: 15px;
+  }
+  
+  .rectangle2 {
+  height: 335px;
+  border-radius: 15px;
+  }
+  
+  .rectangle3 {
+  height: 335px;
+  border-radius: 15px;
+  }
+  }
