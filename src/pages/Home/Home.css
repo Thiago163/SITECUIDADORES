@@ -69,7 +69,7 @@ section#home {
 .titleBox h1 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #ff49a4;
-  font-size: 6vw;
+  font-size: 7vw;
   text-align: center;
   text-shadow: 0px 2px 4px rgba(0,0,0,0.19);
   max-width: 80vw;
@@ -79,7 +79,7 @@ section#home {
 .titleGeneral{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #ff49a4;
-  font-size: 3vw;
+  font-size: 4vw;
   text-align: center;
   text-shadow: 0px 2px 4px rgba(0,0,0,0.19);
   max-width: 80vw;
@@ -108,7 +108,7 @@ section#home {
 /* estilos padrão para a classe appButton */
 .appButton {
   margin-top: 3vh;
-  margin-left: 6%;
+  margin-left: 10%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   align-items: center;
   color: rgb(0, 0, 0);
@@ -160,7 +160,7 @@ section#home {
     height: 23vw;
   }
   .appButton {
-    margin-left: 18%;
+    margin-left: -10%;
     padding: 1vw 6vw;
     font-size: 4vw;
     border-radius: 6vw;
@@ -228,7 +228,7 @@ section#home {
 
 .rectangle1 {
   width: 400px;
-  height: 440px;
+  height: 450px;
   background-color: #ff49a4;
   border-radius: 20px;
   box-shadow: 3px 6px 6px -2px rgba(0, 0, 0, 0.1);
@@ -237,7 +237,7 @@ section#home {
 
 .rectangle2 {
   width: 400px;
-  height: 440px;
+  height: 450px;
   background-color: #46d1ff;
   border-radius: 20px;
   box-shadow: 3px 6px 6px -2px rgba(0, 0, 0, 0.1);
@@ -247,7 +247,7 @@ section#home {
 
 .rectangle3 {
   width: 400px;
-  height: 440px;
+  height: 450px;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 3px 6px 6px -2px rgba(0, 0, 0, 0.1);
@@ -273,7 +273,34 @@ section#home {
   .rectangle1,
   .rectangle2,
   .rectangle3 {
-    font-size: 63%;
+    font-size: 100%;
+  }
+}
+
+/* estilos para telas menores que 500px de largura */
+@media (max-width: 500px) {
+  .rectangle1,
+  .rectangle2,
+  .rectangle3 {
+    font-size: 95%;
+  }
+}
+
+/* estilos para telas menores que 400px de largura */
+@media (max-width: 400px) {
+  .rectangle1,
+  .rectangle2,
+  .rectangle3 {
+    font-size: 85%;
+  }
+}
+
+/* estilos para telas menores que 400px de largura */
+@media (max-width: 400px) {
+  .rectangle1,
+  .rectangle2,
+  .rectangle3 {
+    font-size: 60%;
   }
 }
 
@@ -302,17 +329,17 @@ section#home {
   }
   
   .rectangle1 {
-  height: 335px;
+  height: 355px;
   border-radius: 15px;
   }
   
   .rectangle2 {
-  height: 335px;
+  height: 355px;
   border-radius: 15px;
   }
   
   .rectangle3 {
-  height: 335px;
+  height: 355px;
   border-radius: 15px;
   }
   }

@@ -77,6 +77,11 @@ function Clientes() {
             <p>Tias, encontre cuidadores de confiança para seus sobrinhos em nosso aplicativo. Cadastre-se e tenha acesso a serviços
                no cuidado com seus sobrinhos. Tudo isso com praticidade!</p>
           </div>
+
+          <div className="titleGeneral">
+          <h1>Como encontrar nosso trabalho?</h1>
+        </div>
+
           <div className="rectangle2">
             <div className="imgrectangle">
               <img src={playstore} alt="playstore" />
