@@ -22,7 +22,7 @@ function Jobs() {
         document.body.appendChild(errorDiv);
         setTimeout(() => {
           document.body.removeChild(errorDiv);
-        }, 4000);
+        }, 999999999);
       });
   }, []);
 
