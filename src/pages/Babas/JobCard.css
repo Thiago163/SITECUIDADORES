@@ -41,6 +41,7 @@
   max-height: 200px;
 }
 
+/* Estilos padrão */
 .alert {
   position: fixed;
   top: 10%;
@@ -54,6 +55,22 @@
   font-size: 150%;
   border-radius: 5px;
   animation: moveAlert 20s linear infinite;
+}
+
+/* Estilos para telas menores */
+@media only screen and (max-width: 600px) {
+  .alert {
+    font-size: 100%;
+    padding: 10% 15%;
+  }
+}
+
+/* Estilos para telas maiores */
+@media only screen and (min-width: 1200px) {
+  .alert {
+    font-size: 200%;
+    padding: 2% 4%;
+  }
 }
 
 @keyframes moveAlert {
