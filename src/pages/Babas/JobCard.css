@@ -36,8 +36,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  max-width: 180px;
-  max-height: 180px;
+  max-width: 200px;
+  max-height: 200px;
   border-radius: 30%;
   border: 2px solid black;
 }
@@ -239,17 +239,14 @@
   }
 
   .title-area {
-    margin-left: 12.8vw;
     font-size: 1.2rem;
   }
 
   .content-area {
-    margin-left: 28%;
     font-size: 1rem;
   }
 
   .footer {
-    margin-right: 10%;
     flex: 1;
     justify-content: flex-end;
   }
