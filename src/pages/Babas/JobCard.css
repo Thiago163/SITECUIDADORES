@@ -24,11 +24,12 @@
   text-decoration: none;
   background-color: #add8e6;
   color: #000000;
+  transform: scale(1.05);
   box-shadow: 0.5vw 1vw 1vw -0.3vw rgba(0, 0, 0, 0.2);
 }
 /* Estilos padrão para telas maiores que 600px */
 .company-logo {
-  margin-top: 1.5%;
+  margin-top: 0.5%;
   margin-right: 2%;
 }
 
@@ -37,8 +38,8 @@
   border: 2px solid black;
   height: 100vh;
   width: 100vw;
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .portiButton {
@@ -68,12 +69,21 @@
   box-shadow: 0.5vw 1vw 1vw -0.3vw rgba(0,0,0,0.20);
 }
 
+/* estilos para telas menores que 280px */
+@media screen and (max-width: 280px) {
+  .portiButton {
+    font-size: 3vw;
+    border-radius: 8vw;
+    padding: 3% 5%;
+  }
+}
+
 /* estilos para telas menores que 600px */
 @media screen and (max-width: 600px) {
   .portiButton {
     font-size: 3vw;
     border-radius: 8vw;
-    padding: 3% 5%;
+    padding: 4% 6%;
   }
 }
 
