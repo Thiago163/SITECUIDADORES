@@ -1,75 +1,81 @@
 .card {
   max-width: 850px;
-  max-height: 38vh;
+  max-height: 38%;
   margin: 30px auto;
-  justify-content: center; /* Adicionado para centralizar o card /
-  / outras propriedades */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Adicionado para centralizar verticalmente o card */
   margin-top: 30px;
   border: 2px solid black;
   border-radius: 30px;
-  display: flex;
   background-color: #ff49a4;
   padding: 1%;
   margin-bottom: 2%;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0px 7px 29px rgba(100, 100, 111, 0.2);
   opacity: 0.8;
-  color: #000000;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #000;
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
   text-decoration: none;
   cursor: pointer;
-  }
+}
 
 .card:hover {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  text-decoration: none;
   background-color: #add8e6;
-  color: #000000;
-  transform: scale(1.05);
+  color: #000;
   box-shadow: 0.5vw 1vw 1vw -0.3vw rgba(0, 0, 0, 0.2);
 }
-/* Estilos padrão para telas maiores que 600px */
+
 .company-logo {
   margin-top: 0.5%;
   margin-right: 2%;
 }
 
 .company-logo img {
-  border-radius: 30% 30% 30% 30%;
+  aspect-ratio: 1/1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 180px;
+  max-height: 180px;
+  border-radius: 30%;
   border: 2px solid black;
-  height: 100vh;
-  width: 100vw;
-  max-width: 200px;
-  max-height: 200px;
 }
 
 .portiButton {
   margin-top: 3vh;
   margin-left: 1%;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
   align-items: center;
   padding: 0.8% 1.5%;
-  color: rgb(0, 0, 0);
-  font-weight: 1%;
+  color: #000;
+  font-weight: 500;
+  /* Alterado para um valor válido */
   background-color: #0077ff;
   border: 2.5px solid black;
   border-radius: 4vw;
-  box-shadow: 0.3vw 0.6vw 0.6vw -0.2vw rgba(0,0,0,0.10);
-  transition: 0.2s;
+  box-shadow: 0.3vw 0.6vw 0.6vw -0.2vw rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+  /* Alterado para uma transição mais suave */
   cursor: pointer;
   font-size: 1.5vw;
 }
 
-/* estilos para quando o cursor do mouse estiver sobre o botão */
 .portiButton:hover {
   background-color: #add8e6;
-  color: rgb(0, 0, 0);
-  /* estilos adicionados */
-  transition-duration: 0.3s;
+  color: #000;
   transform: scale(1.05);
-  box-shadow: 0.5vw 1vw 1vw -0.3vw rgba(0,0,0,0.20);
+  box-shadow: 0.5vw 1vw 1vw -0.3vw rgba(0, 0, 0, 0.2);
 }
 
-/* estilos para telas menores que 280px */
+@media screen and (max-width: 600px) {
+  .portiButton {
+    font-size: 3vw;
+    border-radius: 8vw;
+    padding: 4% 6%;
+  }
+}
+
 @media screen and (max-width: 280px) {
   .portiButton {
     font-size: 3vw;
@@ -132,15 +138,19 @@
   0% {
     transform: translateX(-90%) translateY(55%);
   }
+
   25% {
     transform: translateX(-55%) translateY(70%);
   }
+
   50% {
     transform: translateX(40%) translateY(-75%);
   }
+
   75% {
     transform: translateX(60%) translateY(-80%);
   }
+
   100% {
     transform: translateX(-70%) translateY(55%);
   }
