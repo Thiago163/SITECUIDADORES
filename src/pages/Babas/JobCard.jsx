@@ -24,8 +24,7 @@ function JobCard({ vaga }) {
 
                 </div>
                 <div className="footer">
-                    <p>Celular: {vaga.celular}</p>
-                    <p>Email: {vaga.email}</p>
+                    <p>Celular: {vaga.celular} Email: {vaga.email}</p>
                 </div>
             </div>
         </div>

@@ -187,7 +187,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -214,7 +214,7 @@
   }
 
   .footer {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     flex-direction: column;
     align-items: center;
     text-align: center;
