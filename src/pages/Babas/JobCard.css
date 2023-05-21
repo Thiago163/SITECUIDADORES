@@ -32,9 +32,6 @@
 }
 
 .company-logo img {
-  aspect-ratio: 1/1;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   max-width: 250px;
   max-height: 250px;
