@@ -18,6 +18,8 @@ function JobCard({ vaga }) {
                 <div className="content-area">
                     <h2>Descrição do cuidador:</h2>
                     <p>{vaga.descricao}</p>
+                    <p>{vaga.estado}</p>
+                    <p>{vaga.cidade}</p>
                     <button className="portiButton" onClick={handleClick}>
                         Portfólio
                     </button>
