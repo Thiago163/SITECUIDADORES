@@ -38,9 +38,8 @@
   object-fit: cover;
   max-width: 250px;
   max-height: 250px;
-  border: 3px solid black;
   border-radius: 50%; /* Alterado para 50% */
-  /* border: 3px solid black; Removido se não desejar a borda */
+  border: 3px solid black; /* Adicionado para manter a borda preta */
 }
 
 .portiButton {
