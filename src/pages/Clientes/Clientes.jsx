@@ -58,7 +58,7 @@ function Clientes() {
               <img src={pai} alt="pai" />
             </div>
             <h1>Pais</h1><br />
-            <p>Pais, encontre cuidadores qualificados para seus filhos, seguro e prático. 
+            <p>Pais, encontre cuidadores qualificados para seus filhos. 
               Cadastre-se agora para encontrar profissionais confiáveis para cuidar do que é mais importante para você.</p>
           </div>
           <div className="rectangle3">
