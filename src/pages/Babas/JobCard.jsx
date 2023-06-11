@@ -8,7 +8,7 @@ function JobCard({ vaga }) {
     return (
         <div className="card">
             <div className="company-logo">
-                <img src={vaga.imagem}> alt="Foto não cadastrada"</img>
+                <img src={vaga.imagem} alt="Imagem não cadastrada"/>
             </div>
             <div className="text-area">
                 <div className="title-area">
