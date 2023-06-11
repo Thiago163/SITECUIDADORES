@@ -22,7 +22,7 @@ function Aplicativo() {
   }
 
   function openGithub() {
-    window.open("https://github.com/", "_blank");
+    window.open("https://github.com/Thiago163/site_cuidadores", "_blank");
   }
 
   function openPlaystore() {
