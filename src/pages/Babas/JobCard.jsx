@@ -29,7 +29,7 @@ function JobCard({ vaga }) {
           <h2>Descrição do cuidador:</h2>
           <p>{vaga.descricao}</p>
           <h2>
-            {vaga.cidade} - {vaga.estado}
+            {vaga.cidade} {vaga.estado}
           </h2>
           <button className="portiButton" onClick={handlePortfolioClick}>
             Portfólio
