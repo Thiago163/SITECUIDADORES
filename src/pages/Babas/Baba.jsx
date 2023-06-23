@@ -7,7 +7,7 @@ function Jobs() {
   const [vagas, setVagas] = useState([]);
 
   useEffect(() => {
-    fetch("https://localhost:44396/api/site", {
+    fetch("https://apicuidadores20230623084826.azurewebsites.net/api/site", {
       method: "GET",
     })
       .then((response) => response.json())
