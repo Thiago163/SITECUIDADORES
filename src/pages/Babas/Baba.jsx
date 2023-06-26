@@ -4,15 +4,17 @@ import "./JobCard.css";
 import JobCard from "./JobCard";
 
 function Jobs() {
+  const [loading, setLoading] = useState(true);
   const [vagas, setVagas] = useState([]);
 
   useEffect(() => {
-    fetch("https://cuidadores.azurewebsites.net/api/site", {
+    fetch("https://localhost:44396/api/site", {
       method: "GET",
     })
       .then((response) => response.json())
       .then((json) => {
         setVagas(json);
+        setLoading(false);
       })
       .catch((error) => {
         console.log(error);
@@ -28,9 +30,14 @@ function Jobs() {
 
   return (
     <div className="jobs-area">
-      {vagas.map((vaga, index) => (
-        <JobCard vaga={vaga} key={index} />
-      ))}
+      {loading ? (
+        <div className="loading">
+          <div className="loading-circle"></div>
+          <div className="loading-text">Carregando...</div>
+        </div>
+      ) : (
+        vagas.map((vaga, index) => <JobCard vaga={vaga} key={index} />)
+      )}
     </div>
   );
 }
