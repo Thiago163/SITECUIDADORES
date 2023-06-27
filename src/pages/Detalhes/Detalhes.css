@@ -1,0 +1,78 @@
+/* Detalhes.css */
+.detalhes-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .detalhes-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .detalhes-description {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .passo-passo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .passo {
+    flex-basis: calc(50% - 10px);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .passo-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .passo-description {
+    font-size: 18px;
+    color: #888;
+  }
+  
+  .detalhes-button {
+    background-color: #ff4081;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dancarina-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .dancarina-gif {
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    border-radius: 50%;
+  }
+  
+  .detalhes-button:hover {
+    background-color: #e02a6b;
+  }
+  
+  @media (max-width: 600px) {
+    .passo {
+      flex-basis: 100%;
+    }
+  }  
