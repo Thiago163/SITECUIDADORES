@@ -6,7 +6,7 @@ function JobCard({ vaga }) {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/aplicativo');
+    navigate('/Detalhes');
   };
 
   const handlePortfolioClick = (event) => {
