@@ -31,7 +31,7 @@ function Clientes() {
       <header>
         <nav>
           <ul>
-            <li onClick={home}>Home</li>
+            <li onClick={home}>início</li>
             <li onClick={aplicativo}>Aplicativo</li>
             <li onClick={baba}>Babás</li>
             <li onClick={cliente}>Clientes</li>
