@@ -50,7 +50,7 @@ function Aplicativo() {
         <div className="container">
           <button onClick={openGithub} className="appButtonGIT">Github</button>
           <button onClick={openPlaystore} className="appButtonAPP">GooglePlay</button>
-          <button onClick={home} className="appButtonVoltar">Home</button>
+          <button onClick={home} className="appButtonVoltar">início</button>
         </div>
 
       </section>
