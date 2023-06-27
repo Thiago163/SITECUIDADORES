@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import Aplicativo from "./pages/Aplicativo/Aplicativo";
 import Babas from "./pages/Babas/Baba";
 import Clientes from "./pages/Clientes/Clientes";
+import Detalhes from './pages/Detalhes/Detalhes';
  
 
 function App() {
@@ -23,6 +24,11 @@ function App() {
     {
       path: "/Clientes",
       element: <Clientes />,
+    },
+
+    {
+      path: "/Detalhes",
+      element: <Detalhes />,
     },
     
   ]);
